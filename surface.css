@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  font-family: "Helvetica Neue";
+  overflow-x: hidden;
+  color: white;
+}
+
+#gradient {
+  padding: 1em;
+  background-color: #f2994a;
+  animation: lit 30s ease-out infinite;
+  -webkit-animation: lit 30s ease-out infinite;
+  -moz-animation: lit 30s ease-out infinite;
+  width: 100%;
+  height: auto;
+}
+
+#wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 1em 2em 1em 1em;
+  margin: 0 0 0 1%;
+}
+
+@keyframes lit {
+  0% {
+    background-color: #f2994a;
+  }
+  50% {
+    background-color: #f2c94c;
+  }
+  100% {
+    background-color: #f2994a;
+  }
+}
+
+img {
+  width: 100%;
+  max-width: 400px;
+}
+
+p {
+  margin: 2em 0 2em 0;
+  font-size: 1.25em;
+  letter-spacing: 0.05em;
+  line-height: 1.5em;
+}
+
+a {
+  color: white;
+}
+
+#call {
+  font-style: oblique;
+}
+
+@media (max-width: 604px) {
+  #wrapper {
+    grid-template-columns: 1fr;
+  }
+}
